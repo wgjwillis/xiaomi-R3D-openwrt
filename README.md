@@ -14,6 +14,7 @@ WiFi SSID 为 OpenWrt，双频合一；密码为空
 
 添加了passwall等
 
+alpinefancontrol 为R3D专用风扇控制。其他路由器建议 编辑feeds.conf.default文件屏蔽 src-git alpinefancontrol https://github.com/openwrt-xiaomi/openwrt-alpine-fan-control.git 这行。
 
 ## 安装依存
 
