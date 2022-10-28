@@ -40,3 +40,10 @@ make download V=s -j1
 make V=s -j1
 
 ```
+
+## 问题及处理方法
+
+1，报错：Hash of the local file jq-1.6.tar.gz does not match (file: 5de8c8e29aaa3fb9cc6b47bb27299f271354ebb72514e3accadc7d38b5bbaa72, requested: 9625784cf2e4fd9842f1d407681ce4878b5b0dcddbcd31c6135114a30c71e6a8)
+```
+sed -ri 's#9625784cf2e4fd9842f1d407681ce4878b5b0dcddbcd31c6135114a30c71e6a8#5de8c8e29aaa3fb9cc6b47bb27299f271354ebb72514e3accadc7d38b5bbaa72#' ./feeds/packages/utils/jq/Makefile
+```
