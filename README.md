@@ -47,3 +47,22 @@ make V=s -j1
 ```
 sed -ri 's#9625784cf2e4fd9842f1d407681ce4878b5b0dcddbcd31c6135114a30c71e6a8#5de8c8e29aaa3fb9cc6b47bb27299f271354ebb72514e3accadc7d38b5bbaa72#' ./feeds/packages/utils/jq/Makefile
 ```
+
+## 墙内设置
+1，git代理
+```
+git config --global http.proxy 'http://127.0.0.1:1080'
+git config --global https.proxy 'http://127.0.0.1:1080'
+```
+设置完之后可以使用这个命令查看 Git 的配置。
+```
+git config --list
+```
+2，GO代理
+```
+export GOPROXY=https://proxy.golang.com.cn,direct
+```
+## WSL设置
+```
+source /etc/environment
+```
