@@ -4,3 +4,5 @@ src-git-full routing https://git.openwrt.org/feed/routing.git^85028704f688a6768d
 src-git-full telephony https://git.openwrt.org/feed/telephony.git^1d2031a5c82816483c51bca15649e2957fbe2bc2
 src-git kenzo https://github.com/kenzok8/openwrt-packages
 src-git passwall https://github.com/xiaorouji/openwrt-passwall
+src-git alpinefancontrol https://github.com/openwrt-xiaomi/openwrt-alpine-fan-control.git
+src-git oray https://github.com/OrayOS/OpenOray.git
