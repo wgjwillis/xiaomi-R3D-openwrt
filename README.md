@@ -1,7 +1,9 @@
 ## 注意事项
 
 root密码为空
+
 WiFi SSID 为 R3D-WiFi；密码为空
+
 路由器地址：192.168.15.1
 
 添加了passwall等
