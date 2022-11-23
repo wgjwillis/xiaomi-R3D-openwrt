@@ -73,3 +73,11 @@ export GOPROXY=https://proxy.golang.com.cn,direct
 ```
 source /etc/environment
 ```
+
+## 其他修改
+1，修改主机名、时区、NTP服务器等。。。
+```
+vi package/base-files/files/bin下的config_generate
+```
+
+
