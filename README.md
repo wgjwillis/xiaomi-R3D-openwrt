@@ -77,7 +77,7 @@ source /etc/environment
 ## 其他修改
 1，修改主机名、时区、NTP服务器等。。。
 ```
-vi package/base-files/files/bin下的config_generate
+vi package/base-files/files/bin/config_generate
 ```
         set system.@system[-1].hostname='R3D'
         set system.@system[-1].timezone='CST-8'
@@ -89,8 +89,6 @@ vi package/base-files/files/bin下的config_generate
         add_list system.ntp.server='time1.cloud.tencent.com'
         add_list system.ntp.server='time.ustc.edu.cn'
         add_list system.ntp.server='cn.pool.ntp.org'
-
-package/kernel/mac80211/files/lib/wifi
 
 2，修改默认无线
 ```
