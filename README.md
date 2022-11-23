@@ -79,5 +79,22 @@ source /etc/environment
 ```
 vi package/base-files/files/bin下的config_generate
 ```
+        set system.@system[-1].hostname='R3D'
+        set system.@system[-1].timezone='CST-8'
+        set system.@system[-1].ttylogin='0'
+        set system.@system[-1].log_size='64'
+        set system.@system[-1].urandom_seed='0'
 
+        add_list system.ntp.server='ntp.aliyun.com'
+        add_list system.ntp.server='time1.cloud.tencent.com'
+        add_list system.ntp.server='time.ustc.edu.cn'
+        add_list system.ntp.server='cn.pool.ntp.org'
 
+package/kernel/mac80211/files/lib/wifi
+
+2，修改默认无线
+```
+vi package/kernel/mac80211/files/lib/wifi/mac80211.sh
+```
+set wireless.radio${devidx}.disabled=0 （1改成0）
+set wireless.default_radio${devidx}.ssid=OpenWrt （改默认SSID）
